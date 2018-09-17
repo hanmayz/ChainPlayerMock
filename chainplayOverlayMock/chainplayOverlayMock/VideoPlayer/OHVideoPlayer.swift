@@ -24,7 +24,7 @@ class OHVideoPlayer: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        if let path = Bundle.main.path(forResource: "IMG_0513", ofType: "mp4") {
+        if let path = Bundle.main.path(forResource: "sample_video", ofType: "mp4") {
             let contentURL = URL(fileURLWithPath: path)
             videoPlayer = AVPlayer(url: contentURL)
             playerVC = AVPlayerViewController()
